@@ -1,11 +1,10 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/logo.png" width="200" height="200px">
     
-    <Watchers/>
+    <Filters/>
   </div>
 </template>
-
 
 
 <script>
@@ -13,6 +12,10 @@ import HelloWorld from './components/HelloWorld.vue'
 import Directives from './components/Directives.vue'
 import Events from './components/Events.vue'
 import Watchers from './components/Watchers.vue'
+import Computed from './components/Computed.vue'
+import Props from './components/Props.vue'
+import Slots from './components/Slots.vue'
+import Filters from './components/Filters.vue'
 
 export default {
   name: 'app',
@@ -20,7 +23,16 @@ export default {
     HelloWorld,
     Directives,
     Events,
-    Watchers
+    Watchers,
+    Computed,
+    Props,
+    Slots,
+    Filters
+  },
+  data(){
+    return {
+      color:"green"
+    };
   }
 }
 </script>

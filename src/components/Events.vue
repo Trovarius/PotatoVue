@@ -14,10 +14,8 @@ export default {
         }
     },
     methods: {
-        handleClick(event) {
+        handleClick() {
             this.contador++;
-            console.log(event.target.innerText)
-            console.log(event);
         }
     }
 }
